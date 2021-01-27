@@ -1,0 +1,12 @@
+# The preferred IDE/text editor for this project is VS Code
+
+.settings/*
+.vscode/*
+
+Config/.settings/*
+Config/target/*
+Config/.classpath
+Config/.factorypath
+Config/.project
+
+.project
