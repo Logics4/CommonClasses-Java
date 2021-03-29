@@ -26,13 +26,13 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import io.github.logics4.commonclasses.config.exceptions.*;
-import io.github.logics4.commonclasses.config.formats.ConfigType;
+import io.github.logics4.commonclasses.config.formats.UncommentedConfigType;
 import io.github.logics4.commonclasses.config.formats.YAML;
 import ninja.leaping.configurate.ConfigurationNode;
 
 public class ConfigFile {
 
-    private ConfigType configFile;
+    private UncommentedConfigType configFile;
     private ConfigurationNode config;
     private Path dataFolderPath;
     private String configFileName;

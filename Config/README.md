@@ -1,8 +1,6 @@
 ## CommonClasses-Config module
 
-This module is a bit of abstraction over [Configurate](https://github.com/SpongePowered/Configurate), a library that deals with configuration files (think YAML, JSON, HOCON, XML...).</br>
-
-Configurate is licensed under Apache License 2.0. You can find a copy in this directory, and in the `META-INF/LICENSES/Apache_v2.0/` directory of the compiled JAR file.</br></br>
+This module is a bit of abstraction over [Configurate](https://github.com/SpongePowered/Configurate), a library that deals with configuration files (think YAML, JSON, HOCON, XML...).</br></br>
 
 ## How to use this module?
 You can use [jitpack.io](https://jitpack.io/):</br>
@@ -23,7 +21,7 @@ You can use [jitpack.io](https://jitpack.io/):</br>
         <scope>compile</scope> <!-- We recommend shading this, unless your runtime's classpath already has this library. -->
     </dependency>
 
-    <!-- In case you make use of HOCON support, you'll need to shade Configurate-HOCON by yourself. -->
+    <!-- In case you make use of HOCON support, you'll have to declare Configurate-HOCON as a dependency by yourself. -->
     <dependency>
         <groupId>org.spongepowered</groupId>
         <artifactId>configurate-hocon</artifactId>
@@ -31,7 +29,7 @@ You can use [jitpack.io](https://jitpack.io/):</br>
         <scope>compile</scope> <!-- can be changed to "provided" if you don't need to shade it -->
     </dependency>
 
-    <!-- In case you make use of YAML support, you'll need to shade Configurate-YAML by yourself. -->
+    <!-- In case you make use of YAML support, you'll have to declare Configurate-YAML as a dependency by yourself. -->
     <dependency>
         <groupId>org.spongepowered</groupId>
         <artifactId>configurate-yaml</artifactId>
@@ -46,7 +44,7 @@ You can use [jitpack.io](https://jitpack.io/):</br>
 ```
 
 ## License for CommonClasses-Config
-Copyright (C) 2020 Logics4</br></br>
+Copyright (C) 2020-2021 Logics4</br></br>
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.</bR>
 You may obtain a copy of the License at

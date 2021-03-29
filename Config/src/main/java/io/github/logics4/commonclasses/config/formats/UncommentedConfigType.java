@@ -24,7 +24,7 @@ import java.nio.file.Path;
 
 import ninja.leaping.configurate.ConfigurationNode;
 
-public interface ConfigType {
+public interface UncommentedConfigType {
     public ConfigurationNode load() throws IOException;
     public void save() throws IOException;
     public Path getPath();

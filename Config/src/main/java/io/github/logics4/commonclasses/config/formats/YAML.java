@@ -30,7 +30,7 @@ import ninja.leaping.configurate.ConfigurationNode;
 import ninja.leaping.configurate.loader.ConfigurationLoader;
 import ninja.leaping.configurate.yaml.YAMLConfigurationLoader;
 
-public class YAML implements ConfigType {
+public class YAML implements UncommentedConfigType {
 
     private Path dataFolderPath; // The folder where the config file will be located
     private Path configFilePath;
