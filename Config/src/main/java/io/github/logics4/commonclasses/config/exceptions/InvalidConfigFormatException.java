@@ -19,7 +19,7 @@
 
 package io.github.logics4.commonclasses.config.exceptions;
 
-public class InvalidConfigFormatException extends RuntimeException {
+public class InvalidConfigFormatException extends ConfigModuleException {
 
     private static final long serialVersionUID = 7434059066001105976L;
 }

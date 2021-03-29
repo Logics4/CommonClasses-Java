@@ -19,7 +19,7 @@
 
 package io.github.logics4.commonclasses.config.exceptions;
 
-public class ConfigLoadFailureException extends RuntimeException {
+public class ConfigLoadFailureException extends ConfigModuleException {
 
     private static final long serialVersionUID = 6353570780934415313L;
 }
