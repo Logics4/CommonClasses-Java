@@ -19,15 +19,17 @@
 
 package io.github.logics4.commonclasses.config;
 
+import io.github.logics4.commonclasses.config.exceptions.*;
+import io.github.logics4.commonclasses.config.formats.UncommentedConfigType;
+import io.github.logics4.commonclasses.config.formats.YAML;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 
-import io.github.logics4.commonclasses.config.exceptions.*;
-import io.github.logics4.commonclasses.config.formats.UncommentedConfigType;
-import io.github.logics4.commonclasses.config.formats.YAML;
 import ninja.leaping.configurate.ConfigurationNode;
 
 public class ConfigFile {
@@ -62,7 +64,7 @@ public class ConfigFile {
             }
             if (Files.notExists(this.configFilePath) || replace) {
                 InputStream in = getClass().getResourceAsStream(pathInJar + configFileName);
-                Files.copy(in, this.configFilePath);
+                Files.copy(in, this.configFilePath, StandardCopyOption.REPLACE_EXISTING);
             }
         } catch (IOException e) {
             throw new ConfigExtractionFailureException();

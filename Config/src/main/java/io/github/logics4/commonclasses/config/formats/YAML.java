@@ -24,11 +24,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import org.yaml.snakeyaml.DumperOptions.FlowStyle;
-
 import ninja.leaping.configurate.ConfigurationNode;
 import ninja.leaping.configurate.loader.ConfigurationLoader;
 import ninja.leaping.configurate.yaml.YAMLConfigurationLoader;
+
+import org.yaml.snakeyaml.DumperOptions.FlowStyle;
 
 public class YAML implements UncommentedConfigType {
 
