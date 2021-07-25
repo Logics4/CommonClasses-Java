@@ -73,12 +73,6 @@ public class CommentedConfigFile {
 
     public CommentedConfigFile loadConfig() {
         try {
-            if (Files.notExists(this.dataFolderPath)) {
-                Files.createDirectories(this.dataFolderPath);
-            }
-            if (Files.notExists(this.configFilePath)) {
-                Files.createFile(this.configFilePath);
-            }
             config = configFile.load();
         } catch (IOException e) {
             throw new ConfigLoadFailureException();
